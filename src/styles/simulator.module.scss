@@ -1,0 +1,46 @@
+@import './settings/';
+@import './utilities/common.scss';
+
+.simulator {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F6F7FC;
+  }
+
+  &__content {
+    @extend .card;
+    padding: 50px 40px;
+    background-color: #FFFFFF;
+  }
+  
+  &__title {
+    font-family: 'Poppins', sans-serif;  
+    font-size: 28px;
+    position: relative;
+    
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -15px;
+      left: 0;
+      width: 45px;
+      height: 2px;
+      background-color: $red;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 800;
+  }
+
+  &__wrapper-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}

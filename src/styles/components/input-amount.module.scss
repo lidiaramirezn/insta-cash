@@ -1,0 +1,16 @@
+@import './../settings/';
+
+.amount {
+  &__input {
+    border-bottom: 0.1rem solid $light-grey;
+    width: 100%;
+    padding-bottom: 5px;
+
+    &-message {
+      font-size: 13px;
+      color: $dark-grey;
+      margin-top: 8px;
+    }
+  }
+}
+

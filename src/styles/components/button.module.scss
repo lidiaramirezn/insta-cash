@@ -1,0 +1,25 @@
+@import './../settings';
+
+.button {
+  &[type=submit] {
+    padding: 0.5rem 3rem;
+    border-radius: 8px;
+    border: 1px solid $red;
+    color: $red;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+
+  &:disabled, 
+  &:hover:disabled {
+    background-color: rgb(246, 246, 246);
+    border-color: rgb(214, 214, 214);
+    color: rgb(117, 117, 117);
+  }
+
+  &--center {
+    margin: 0 auto;
+  }
+}

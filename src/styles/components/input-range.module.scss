@@ -1,0 +1,39 @@
+@import './../settings';
+
+.range {
+  display: block;
+  -webkit-appearance: none;
+  background-color: $purple;
+  width: 100%;
+  height: 12px;
+  border-radius: 5px;
+  margin: 20px auto;
+  outline: 0;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid $light-grey2;
+    cursor: pointer; 
+    box-shadow: -5px 8px 10px -5px rgba(180,180,180,0.75);
+  }
+
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  &__fee {
+    font-weight: 700;
+    color: $purple;
+  }
+
+  &__maximum {
+    color: $grey;
+  }
+}

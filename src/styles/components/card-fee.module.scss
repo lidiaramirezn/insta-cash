@@ -1,0 +1,50 @@
+@import './../settings';
+@import './../utilities/common.scss';
+
+.card-fee {
+  @extend .card;
+  margin: 40px  0;
+  padding: 15px 15px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 16px;    
+    font-weight: 300;
+    margin: 15px auto 20px;
+  }
+
+  &__divider {
+    display: flex;
+    width: 550px;
+  }
+
+  &__aside {
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+
+    &--secondary {
+      border-right: 1px dashed $black;
+      border-left: 1px dashed $black;
+    }
+    
+  }
+
+  &__amount {
+    margin: 5px auto 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  &__value {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+}
